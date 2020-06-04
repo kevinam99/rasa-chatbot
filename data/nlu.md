@@ -18,7 +18,7 @@
 – find flights from [bangalore](source) to [mumbai](destination)  
 – get me flights from [bangalore](source) to [mumbai](destination)  
 – what are flights from [bangalore](source) to [mumbai](destination)  
-– fetch me flights from [bangalore](source) to [mumbai](destination)  
+– fetch me flights from [bangalore](source)  to [mumbai](destination)  
 – find flights from [lucknow](source) to [delhi](destination)  
 – get me flights from [lucknow](source) to [delhi](destination)  
 – what are flights from [lucknow](source) to [delhi](destination)  

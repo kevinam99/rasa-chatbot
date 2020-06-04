@@ -1,31 +1,42 @@
-## happy path
+## story 1.1 greet+search_flights+thanks 
+
 * greet
-  - utter_greet
-* mood_great
-  - utter_happy
-
-## sad path 1
+    — utter_greet
+* search_flights{'source':'bangalore','destination':'mumbai'} 
+  — action_find_flights
+* thanks
+   — utter_welcome
+   
+## story 1.2 greet+search_flights+thanks 
+* greet 
+  — utter_greet
+* search_flights{'source':'lucknow','destination':'delhi'}
+  — action_find_flights
+* thanks
+  — utter_welcome
+  
+## story 2.1 greet+search_flights+bye
 * greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* affirm
-  - utter_happy
-
-## sad path 2
+  — utter_greet
+* search_flights{'source':'bangalore','destination':'mumbai'}
+   — action_find_flights
+* bye
+   — utter_goodbye
+   
+## story 2.2 greet+search_flights+bye
 * greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* deny
-  - utter_goodbye
+  — utter_greet
+* search_flights{'source.\':'lucknow','destination':'delhi'}
+  — action_find_flights 
+* bye
+   — utter_goodbye
 
-## say goodbye
-* goodbye
-  - utter_goodbye
-
-## bot challenge
-* bot_challenge
-  - utter_iamabot
+## story 3.1 greet+search_flights+thanks+bye 
+* greet
+  — utter_greet 
+* search_flights{'source':'bangalore','destination':'mumbai'}
+  — action_find_flights
+* thanks
+   — utter_welcome
+* bye
+  — utter_goodbye 
