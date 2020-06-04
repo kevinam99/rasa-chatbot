@@ -2,3 +2,4 @@ venv/
 rasa-build/
 models/
 credentials.yml
+endpoints.yml
